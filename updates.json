@@ -1,0 +1,13 @@
+{
+  "addons": {
+    "{fb005b54-5431-46cc-a3b2-7b6291bbf7cd}": {
+      "updates": [
+        {
+          "version": "0.1",
+          "update_link": "https://github.com/imperviousai/beta-extension-releases/releases"
+        }
+      ]
+    }
+  }
+}
+
