@@ -33,7 +33,7 @@ service_list:
 ipfs:
   directory: .imp/ #Directory for IPFS data if not default (~/.imp/ipfs)
 ion:
-  url: https://relayresolver.imp-api.net #Url for the ION node
+  url: https://relayresolver.imp-api.net/ #Url for the ION node
   active: true # Whether or not the ION node is active
 key:
   # passphrase: test
