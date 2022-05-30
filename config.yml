@@ -10,6 +10,9 @@ sql:
   # for mysql:
   #connection_string: "root:password@(localhost:52000)/impervious"  # replace with db configs
   #type: mysql
+did:
+  universal_resolver_urls:
+    - https://resolver.imp-api.net/1.0/identifiers/
 ###### DO NOT EDIT THE BELOW SECTION#####
 # Services
 service_list:
@@ -32,8 +35,8 @@ service_list:
 ###### DO NOT EDIT THE ABOVE SECTION#####
 ipfs:
   directory: .imp/ #Directory for IPFS data if not default (~/.imp/ipfs)
-did:
-  private_key: GBMBzuhw7XgSdbNffh8HpoKWEdEN6hU2Q5WqL1KQTG5Z
 ion:
   url: https://relayresolver.imp-api.net #Url for the ION node
   active: true # Whether or not the ION node is active
+key:
+  # passphrase: test
