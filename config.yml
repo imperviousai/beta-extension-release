@@ -1,39 +1,33 @@
-# Server configurations
 server:
-  enabled: true # enable the GRPC/HTTP/websocket server
-  grpc_addr: 127.0.0.1:8881 #IP:port for GRPC
-  http_addr: 127.0.0.1:8882 #IP:port for HTTP/websocket
-  http_did_addr: 127.0.0.1:8893 #IP:port for HTTP DIDComm
+  enabled: true
+  grpc_addr: 127.0.0.1:8881
+  http_addr: 127.0.0.1:8882
+  http_did_addr: 127.0.0.1:8893
 sql:
-  connection_string: file:.imp/imp.db?_auth&_auth_user=admin&_auth_pass=supersecretpassword&_auth_crypt=sha256  # replace with your SQL configs
+  connection_string: file:.imp/imp.db?_auth&_auth_user=admin&_auth_pass=supersecretpassword&_auth_crypt=sha256
   type: sqlite
-  # for mysql:
-  #connection_string: "root:password@(localhost:52000)/impervious"  # replace with db configs
-  #type: mysql
-###### DO NOT EDIT THE BELOW SECTION#####
-# Services
+did:
+  universal_resolver_urls:
+  - https://resolver.imp-api.net/1.0/identifiers/
 service_list:
-  - service_type: message
-    active: true
-    custom_record_number: 400000
-    additional_service_data:
-  - service_type: sign
-    active: true
-    custom_record_number: 800000
-    additional_service_data:
-  - service_type: relay
-    active: true
-    custom_record_number: https://didcomm.org/routing/2.0
-    additional_service_data:
-  - service_type: relay-registration
-    active: true
-    custom_message_type: https://impervious.ai/didcomm/relay-registration/1.0
-    additional_service_data:
-###### DO NOT EDIT THE ABOVE SECTION#####
+- service_type: message
+  active: true
+  custom_message_type: ""
+  additional_service_data: null
+- service_type: sign
+  active: true
+  custom_message_type: ""
+  additional_service_data: null
+- service_type: relay
+  active: true
+  custom_message_type: https://didcomm.org/routing/2.0
+  additional_service_data: null
+- service_type: relay-registration
+  active: true
+  custom_message_type: https://impervious.ai/didcomm/relay-registration/1.0
+  additional_service_data: null
 ipfs:
-  directory: .imp/ #Directory for IPFS data if not default (~/.imp/ipfs)
-ion:
-  url: https://relayresolver.imp-api.net/ #Url for the ION node
-  active: true # Whether or not the ION node is active
+  directory: .imp/
 key:
-  # passphrase: test
+  passphrase: ""
+
