@@ -12,7 +12,7 @@ did:
 service_list:
 - service_type: message
   active: true
-  custom_message_type: ""
+  custom_message_type: "https://didcomm.org/basicmessage/2.0/message"
   additional_service_data: null
 - service_type: sign
   active: true
