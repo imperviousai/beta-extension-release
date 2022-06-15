@@ -10,14 +10,6 @@ did:
   universal_resolver_urls:
   - https://resolver.imp-api.net/1.0/identifiers/
 service_list:
-- service_type: message
-  active: true
-  custom_message_type: "https://didcomm.org/basicmessage/2.0/message"
-  additional_service_data: null
-- service_type: sign
-  active: true
-  custom_message_type: ""
-  additional_service_data: null
 - service_type: relay-registration
   active: true
   custom_message_type: https://impervious.ai/didcomm/relay-registration/1.0
