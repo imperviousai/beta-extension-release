@@ -18,16 +18,15 @@ service_list:
   active: true
   custom_message_type: ""
   additional_service_data: null
-- service_type: relay
-  active: true
-  custom_message_type: https://didcomm.org/routing/2.0
-  additional_service_data: null
 - service_type: relay-registration
   active: true
   custom_message_type: https://impervious.ai/didcomm/relay-registration/1.0
   additional_service_data: null
 ipfs:
   directory: .imp/
+ion:
+  url: ""
+  active: false
 key:
   passphrase: ""
 
