@@ -49,6 +49,10 @@
         {
           "version": "1.0.15",
           "update_link": "https://github.com/imperviousai/beta-extension-release/releases/download/1.0.15/impervious-plugin-1.0.15.xpi"
+        },
+        {
+          "version": "1.0.16",
+          "update_link": "https://github.com/imperviousai/beta-extension-release/releases/download/1.0.16/impervious-plugin-1.0.16.xpi"
         }
       ]
     }
