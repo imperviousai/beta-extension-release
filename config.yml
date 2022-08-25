@@ -8,7 +8,7 @@ sql:
   type: sqlite
 did:
   universal_resolver_urls:
-  - https://resolver.imp-api.net/1.0/identifiers/
+  - https://resolver.impervious.live/1.0/identifiers/
 service_list:
 - service_type: relay-registration
   active: true
